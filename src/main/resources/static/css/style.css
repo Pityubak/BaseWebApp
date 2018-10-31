@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.navbar-set {
+	background-color: #4a525a !important;
+	margin-top: 10px;
+}
+article{
+	margin-left:12px;
+	margin-right:12px;
+	font-size:18px;
+}
+.text-dif {
+	font-size: 16px;
+	font-weight: bold;
+	color: #e88873 !important;
+}
+
+.main {
+	margin-top: 10px;
+	background-color: #f0edee;
+	color: #0a090c;
+	/* #07393c,#0a090c*/
+}
+
+.card-spec-header {
+	background-color: #07393c;
+}
+
+.img-resize-small {
+	width: 200px;
+	height: 150px;
+	padding:4px 4px 4px 4px;
+
+
+}
+/*ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+ li{
+	float:left;
+}
+li a{
+	display:block;
+}*/
+
+
+/*
+	Animate error code
+*/
+
+.animatext {
+	font-family: Arial, Tahoma;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: box;
+		display: -o-box;
+		display: -ms-box;
+		display: -webkit-box;
+		display: -moz-box;
+	box-pack: center;
+		-o-box-pack: center;
+		-ms-box-pack: center;
+		-webkit-box-pack: center;
+		-moz-box-pack: center;
+	justify-content: center;
+		-o-justify-content: center;
+		-ms-justify-content: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+	box-align: center;
+		-o-box-align: center;
+		-ms-box-align: center;
+		-webkit-box-align: center;
+		-moz-box-align: center;
+	align-items: center;
+		-o-align-items: center;
+		-ms-align-items: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+
+}
+
+
+.animatext > span {
+	font-size: 60px;
+	color:red;
+	
+}
+
+hr{
+	background-color:#0a090c;
+	height:2px;
+}

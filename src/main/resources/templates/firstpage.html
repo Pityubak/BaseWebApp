@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<th:block th:insert="fragments/general.html::head"></th:block>
+<title>Pityubak's first Spring Boot Project</title>
+</head>
+<body>
+	<!-- Header -->
+	<div class="container ">
+		<header th:replace="fragments/general.html::header"></header>
+		<div class="main">
+			<h2 class="text-center">Index Page</h2>
+
+			<!-- Spring card -->
+			<div class="card border-primary mb-3">
+				<div class="row no-gutters">
+					<div class="col-auto">
+						<img th:src="@{img/spring.jpg}" class="img-fluid img-resize-small"
+							alt="">
+					</div>
+					<div class="col">
+						<div class="card-block px-2">
+							<p>The Spring Framework is an application framework and
+								inversion of control container for the Java platform. The
+								framework's core features can be used by any Java application,
+								but there are extensions for building web applications on top of
+								the Java EE (Enterprise Edition) platform. Although the
+								framework does not impose any specific programming model, it has
+								become popular in the Java community as an addition to, or even
+								replacement for the Enterprise JavaBeans (EJB) model. The Spring
+								Framework is open source.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Jpa card -->
+		<div class="card border-primary mb-3">
+			<div class="row no-gutters">
+				<div class="col-auto">
+					<img th:src="@{img/jpa.jpg}" class="img-fluid img-resize-small"
+						alt="">
+				</div>
+				<div class="col">
+					<div class="card-block px-2">
+						<p>The Java Persistence API (JPA) is a Java application
+							programming interface specification that describes the management
+							of relational data in applications using Java Platform, Standard
+							Edition and Java Platform, Enterprise Edition. Persistence in
+							this context covers three areas: the API itself, defined in the
+							javax.persistence package the Java Persistence Query Language
+							(JPQL) object/relational metadata</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- H2 card -->
+		<div class="card border-primary mb-3">
+			<div class="row no-gutters">
+				<div class="col-auto">
+					<img th:src="@{img/h2.png}" class="img-fluid img-resize-small"
+						alt="">
+				</div>
+				<div class="col">
+					<div class="card-block px-2">
+						<p>H2 is a relational database management system written in
+							Java. It can be embedded in Java applications or run in the
+							client-server mode.[1] The software is available as open source
+							software Mozilla Public License 2.0 or the original Eclipse
+							Public License.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Thymeleaf card -->
+		<div class="card border-primary mb-3">
+			<div class="row no-gutters">
+				<div class="col-auto">
+					<img th:src="@{img/thymeleaf.png}"
+						class="img-fluid img-resize-small" alt="">
+				</div>
+				<div class="col">
+					<div class="card-block px-2">
+						<p>Thymeleaf is a Java XML/XHTML/HTML5 template engine that
+							can work both in web (Servlet-based) and non-web environments. It
+							is better suited for serving XHTML/HTML5 at the view layer of
+							MVC-based web applications, but it can process any XML file even
+							in offline environments. It provides full Spring Framework
+							integration. In web applications Thymeleaf aims to be a complete
+							substitute for JSP, and implements the concept of Natural
+							Templates: template files that can be directly opened in browsers
+							and that still display correctly as web pages. Thymeleaf is
+							Open-Source Software, licensed under the Apache License 2.0.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+	<footer th:replace="fragments/general.html::footer"></footer>
+	
+</body>
+</html>

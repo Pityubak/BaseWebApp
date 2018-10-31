@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<th:block th:insert="fragments/general.html::head"></th:block>
+<title>Pityubak's first Spring Boot Project</title>
+</head>
+<body>
+	<!-- Header -->
+	<div class="container ">
+		<header th:replace="fragments/general.html::header"></header>
+		<div class="main">
+			<h2 class="text-center">From h2 database</h2>
+			<br>
+			<!-- Table -->
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead class="thead-dark">
+						<tr>
+							<th>Username</th>
+							<th>Password</th>
+						</tr>
+					</thead>
+					<tbody>
+						<th:block th:each="user:${users}">
+							<tr>
+								<td th:text=${user.username}></td>
+								<td th:text=${user.password}></td>
+							</tr>
+
+						</th:block>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		<footer th:replace="fragments/general.html::footer"></footer>
+	</div>
+</body>
+</html>
